@@ -12,7 +12,7 @@ const Label = styled.h1``;
 const StepContent = styled.div``;
 
 /**
- * Stepper Wizard
+ * Stepp Component
  */
 const Step: React.FC<StepProps> = ({ id, component, label, active }) => {
   if (!active) return null;

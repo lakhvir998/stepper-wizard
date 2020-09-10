@@ -51,6 +51,10 @@ const Wizard: React.FC<WizardProps> = ({
 }) => {
   const theme = dark ? themes.dark : themes.light;
 
+  /**
+   * Function move to next step
+   * @return void
+   */
   const handleNext = () => {
     const step = activeStep + 1;
     onStepChange(step);
@@ -59,10 +63,19 @@ const Wizard: React.FC<WizardProps> = ({
     }
   };
 
+  /**
+   * Function move to previous step
+   * @return void
+   */
   const handleBack = () => {
     onStepChange(activeStep - 1);
   };
 
+  /**
+   * Function to check if final step
+   * @return boolean
+   * @param {number} step
+   */
   const finalStep = (step: number) => {
     return step >= steps.length;
   };

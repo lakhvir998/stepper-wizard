@@ -50,7 +50,7 @@ const Step = styled.span<StyledStepProps>`
 `;
 
 /**
- * Stepper Wizard
+ * Stepper to show list of steps
  */
 const Stepper: React.FC<StepperProps> = ({ index, activeStep }) => {
   return (

@@ -11,11 +11,30 @@ export interface StepProps {
 }
 
 export interface WizardProps {
+  /**
+   * The data for each of the step to walk through
+   */
   steps: StepProps[];
+  /**
+   * active step
+   */
   activeStep: number;
+  /**
+   * Whether or not a step by step legend should show
+   */
   showStepByStepLegend?: boolean;
+  /**
+   * enable dark mode
+   */
   dark?: boolean;
+  /**
+   * Triggers when a different step is to be activated
+   * @param {number} step
+   */
   onStepChange: (step: number) => void;
+  /**
+   * Triggers when the final page of the sequence is reached
+   */
   onSuccess?: () => void;
 }
 
