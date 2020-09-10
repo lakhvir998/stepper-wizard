@@ -2,6 +2,7 @@
   "name": "stepper-wizard",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://lakhvir998.github.io/stepper-wizard",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -23,7 +24,9 @@
     "test:coverage": "react-scripts test --coverage --runInBand --watchAll=false",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -55,6 +58,7 @@
     "enzyme": "3.11.0",
     "enzyme-adapter-react-16": "1.15.4",
     "enzyme-to-json": "3.5.0",
+    "gh-pages": "^3.1.0",
     "jest-fetch-mock": "3.0.3",
     "react-is": "^16.13.1",
     "ts-jest": "26.3.0"
