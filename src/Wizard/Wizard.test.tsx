@@ -1,9 +1,12 @@
 import React from "react";
-import { shallow } from "enzyme";
+import { shallow, configure } from "enzyme";
+import ReactSixteenAdapter from "enzyme-adapter-react-16";
 import { render, fireEvent } from "@testing-library/react";
 import Wizard from "./Wizard";
 import { WizardProps } from "./types";
 import DemoStep from "../DemoStep";
+
+configure({ adapter: new ReactSixteenAdapter() });
 
 const steps = [
   {

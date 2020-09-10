@@ -2,23 +2,20 @@ import React from "react";
 // also exported from '@storybook/react' if you can deal with breaking changes in 6.1
 import { Meta, Story } from "@storybook/react/types-6-0";
 import { withTests } from "@storybook/addon-jest";
-import results from "../../.jest-test-results.json";
+import results from "../.jest-test-results.json";
 
 import Wizard from "./Wizard";
 import { WizardProps } from "./types";
 import DemoStep from "../DemoStep";
 
 export default {
-  title: "Example/Wizard",
+  title: "Wizard",
   component: Wizard,
   decorators: [withTests({ results })],
+  jest: ["Wizard.test.tsx"],
 } as Meta;
 
 const Template: Story<WizardProps> = (args) => <Wizard {...args} />;
-
-Template.parameters = {
-  jest: ["Wizard.test.tsx"],
-};
 
 export const Light = Template.bind({});
 
