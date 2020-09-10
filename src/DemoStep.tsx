@@ -1,6 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 
+export interface DemoProps {
+  title: string;
+}
+
 const Container = styled.div`
   display: flex;
 `;
@@ -8,12 +12,12 @@ const Container = styled.div`
 /**
  * Stepper Wizard
  */
-const Step2: React.FC = () => {
+const DemoStep: React.FC<DemoProps> = ({ title }) => {
   return (
     <Container>
-      <h1>Step 2</h1>
+      <h1>{title}</h1>
     </Container>
   );
 };
 
-export default Step2;
+export default DemoStep;

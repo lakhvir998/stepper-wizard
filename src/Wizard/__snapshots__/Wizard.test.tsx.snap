@@ -1,0 +1,132 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Wizard /> renders the component 1`] = `
+<Component
+  theme={
+    Object {
+      "backgroundColor": "#ffffff",
+      "primary": "#302AE6",
+      "primaryTextColor": "#ffffff",
+      "secondary": "#536390",
+    }
+  }
+>
+  <styled.div>
+    <styled.div>
+      <Stepper
+        activeStep={0}
+        index={0}
+        key="stepper-1"
+      />
+      <Stepper
+        activeStep={0}
+        index={1}
+        key="stepper-2"
+      />
+      <Stepper
+        activeStep={0}
+        index={2}
+        key="stepper-3"
+      />
+    </styled.div>
+    <Step
+      active={true}
+      component={[Function]}
+      id={1}
+      index={1}
+      key="step-0"
+      label="Step 1"
+    />
+    <Step
+      active={false}
+      component={[Function]}
+      id={2}
+      index={2}
+      key="step-1"
+      label="Step 2"
+    />
+    <Step
+      active={false}
+      component={[Function]}
+      id={3}
+      index={3}
+      key="step-2"
+      label="Step 3"
+    />
+    <styled.div>
+      <styled.button
+        data-testid="next"
+        onClick={[Function]}
+        primary={true}
+      >
+        Next
+      </styled.button>
+    </styled.div>
+  </styled.div>
+</Component>
+`;
+
+exports[`renders the component 1`] = `
+<Component
+  theme={
+    Object {
+      "backgroundColor": "#ffffff",
+      "primary": "#302AE6",
+      "primaryTextColor": "#ffffff",
+      "secondary": "#536390",
+    }
+  }
+>
+  <styled.div>
+    <styled.div>
+      <Stepper
+        activeStep={0}
+        index={0}
+        key="stepper-1"
+      />
+      <Stepper
+        activeStep={0}
+        index={1}
+        key="stepper-2"
+      />
+      <Stepper
+        activeStep={0}
+        index={2}
+        key="stepper-3"
+      />
+    </styled.div>
+    <Step
+      active={true}
+      component={[Function]}
+      id={1}
+      index={1}
+      key="step-0"
+      label="Step 1"
+    />
+    <Step
+      active={false}
+      component={[Function]}
+      id={2}
+      index={2}
+      key="step-1"
+      label="Step 2"
+    />
+    <Step
+      active={false}
+      component={[Function]}
+      id={3}
+      index={3}
+      key="step-2"
+      label="Step 3"
+    />
+    <styled.div>
+      <styled.button
+        onClick={[Function]}
+        primary={true}
+      >
+        Next
+      </styled.button>
+    </styled.div>
+  </styled.div>
+</Component>
+`;

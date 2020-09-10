@@ -2,7 +2,7 @@ import React from "react";
 
 export interface StepProps {
   id: string | number;
-  component: React.ReactNode;
+  component: React.ReactNode | Function;
   label: string;
   index?: number;
   active?: boolean;

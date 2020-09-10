@@ -45,7 +45,7 @@ const Wizard: React.FC<WizardProps> = ({
   steps,
   activeStep,
   dark = false,
-  showStepByStepLegend = false,
+  showStepByStepLegend = true,
   onStepChange,
   onSuccess = () => {},
 }) => {
@@ -93,8 +93,12 @@ const Wizard: React.FC<WizardProps> = ({
         )}
         {steps.length > activeStep && (
           <ActionContainer>
-            {activeStep >= 1 && <Button onClick={handleBack}>Back</Button>}
-            <Button primary onClick={handleNext}>
+            {activeStep >= 1 && (
+              <Button onClick={handleBack} data-testid="previous">
+                Back
+              </Button>
+            )}
+            <Button primary onClick={handleNext} data-testid="next">
               Next
             </Button>
           </ActionContainer>
